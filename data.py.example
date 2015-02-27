@@ -1,0 +1,9 @@
+
+"""Access data to twitter API."""
+
+# Read this: dev.twitter.com/oauth/overview
+
+CUSTOMER_KEY = 'Fill me, Neddy.'
+CUSTOMER_SECRET = 'Fill me, Neddy.'
+ACCESS_TOKEN_KEY = 'Fill me, Neddy.'
+ACCESS_TOKEN_SECRET = 'Fill me, Neddy.'
