@@ -2,7 +2,7 @@
 Research of powers and limits of twitter API with python
 
 
-# installation
+# Installation
 Run `pip install -r requirements.txt`
 
 Get authentication access to twitter api. Read here: dev.twitter.com/oauth/overview
@@ -11,7 +11,7 @@ Run `mv data.py.example data.py && vim data.py`
 
 Fill the information
 
-# actually running stuff
+# Actually running stuff
 
 Run `python basic.py --help`
 
