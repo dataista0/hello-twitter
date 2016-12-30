@@ -33,7 +33,6 @@ def print_msg(msg):
     print msg
     print "=" * len(msg)
 
-
 def update_cache():
     """Update AVAILABLE_TRENDS_CACHE_FILE with an API call.
 
@@ -88,7 +87,6 @@ def run(place=False, country=False):
             print 'Available places for %s: %d' % (selected_country, len(places))
             print
             for i, (a_place, place_type) in enumerate(places):
-
                 print a_place, "({}){:<20}".format(place_type,''),
                 if i > 0 and not i % 2:
                     print
@@ -100,9 +98,11 @@ def run(place=False, country=False):
                 selected_place = raw_input("Please, select a place (specify name without type): ")
         else:
             selected_place = place
+
         selected_woeid = [selected['woeid'] for selected in availables if selected['name'] == selected_place][0]
         involved_country = [selected['country'] for selected in availables if selected['name'] == selected_place][0]
         api = basic.get_tweepy_api()
+
         result = api.trends_place(selected_woeid)
         result_trends = result[0]['trends']
         print_msg('Total obtained trends for %s (%s): %d' % (selected_place, involved_country, len(result_trends)))

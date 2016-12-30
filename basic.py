@@ -14,7 +14,7 @@ try:
 except:
     print 'You should `mv data.py.example data.py && vim data.py` with your access data.'
     print 'Read this: dev.twitter.com/oauth/overview'
-    sys.exit(1)
+    raise
 
 _TWITTER_API = None
 _TWEEPY_API = None
