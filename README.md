@@ -1,15 +1,30 @@
 # hello-twitter
-Research of powers and limits of twitter API with python
-
+Playing with twitter API
 
 # Installation
-Run `pip install -r requirements.txt`
 
+1) Make sure you have python-dev, which is required for numpy
+
+Run `sudo apt-get install python-dev`
+
+2) Install required packages
+
+Run `sudo pip install -U -r requirements.txt`
+
+
+3) Obtain and set twitter authentication data
 Get authentication access to twitter api. Read here: dev.twitter.com/oauth/overview
 
-Run `mv data.py.example data.py && vim data.py`
+Run `mv auth_data.py.example auth_data.py && vim auth_data.py`
 
 Fill the information
+
+4) You should download nlkt stopwords.
+ipython
+nltk.download()
+d
+stopwords
+
 
 # Actually running stuff
 

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-#
 """API to trending topics per location.
 
 cli usage:

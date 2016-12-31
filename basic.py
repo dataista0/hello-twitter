@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-#
 
 """Minimal functional tests on twitter API libraries."""
@@ -10,7 +11,7 @@ import twitter
 import tweepy
 
 try:
-    from data import CUSTOMER_KEY, CUSTOMER_SECRET, ACCESS_TOKEN_KEY, ACCESS_TOKEN_SECRET
+    from auth_data import CUSTOMER_KEY, CUSTOMER_SECRET, ACCESS_TOKEN_KEY, ACCESS_TOKEN_SECRET
 except:
     print 'You should `mv data.py.example data.py && vim data.py` with your access data.'
     print 'Read this: dev.twitter.com/oauth/overview'
